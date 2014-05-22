@@ -1,3 +1,6 @@
+NOTE: For a tour of the app and its features, check out the presentation video. You can hear me talk awkwardly for 5 minutes and then steal my app idea.
+
+Description:
 IPhone app to allow a user to search for a video game and be presented with a map of nearby Gamestop and BestBuy locations with that game in stock. Price and store information also displayed.
 
 The game availability, price, and location information is obtained from a web service I wrote (see GameFinder_WebService).
