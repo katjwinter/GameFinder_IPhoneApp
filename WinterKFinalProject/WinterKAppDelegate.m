@@ -7,21 +7,25 @@
 //
 
 #import "WinterKAppDelegate.h"
-
 #import "WinterKFirstViewController.h"
-
+#import "WinterKMapViewController.h"
 #import "WinterKSecondViewController.h"
+#import <GoogleMaps/GoogleMaps.h>
 
 @implementation WinterKAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [GMSServices provideAPIKey:@"AIzaSyAi8PfN9_LbCdU2Upj-UanSo8_cH-yqPY0"];
+    
     // Override point for customization after application launch.
     UIViewController *viewController1 = [[WinterKFirstViewController alloc] initWithNibName:@"WinterKFirstViewController" bundle:nil];
     UIViewController *viewController2 = [[WinterKSecondViewController alloc] initWithNibName:@"WinterKSecondViewController" bundle:nil];
+    UIViewController *viewController3 = [[WinterKMapViewController alloc] initWithNibName:@"WinterKMapViewController" bundle:nil];
     self.tabBarController = [[UITabBarController alloc] init];
-    self.tabBarController.viewControllers = @[viewController1, viewController2];
+    self.tabBarController.viewControllers = @[viewController1, viewController2, viewController3];
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
     return YES;
