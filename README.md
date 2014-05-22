@@ -1,5 +1,7 @@
 NOTE: For a tour of the app and its features, check out the presentation video. You can hear me talk awkwardly for 5 minutes and then steal my app idea.
 
+NOTE: Additional requirements include the GoogleMaps Framework which I did not include here due to size.
+
 Description:
 IPhone app to allow a user to search for a video game and be presented with a map of nearby Gamestop and BestBuy locations with that game in stock. Price and store information also displayed.
 
